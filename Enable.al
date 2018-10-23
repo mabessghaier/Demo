@@ -3,7 +3,7 @@ codeunit 50102 EnableAdvancedApplicationArea
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Application Area Mgmt. Facade", 'OnGetEssentialExperienceAppAreas', '', false, false)]
     local procedure EnableAdvancedApplicationAreaOnGetEssentialExperienceAppAreas(var TempApplicationAreaSetup: record 9178 temporary)
     begin
-        TempApplicationAreaSetup.Advanced := true
+        TempApplicationAreaSetup.Advanced := false
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Application Area Mgmt. Facade", 'OnGetPremiumExperienceAppAreas', '', false, false)]
